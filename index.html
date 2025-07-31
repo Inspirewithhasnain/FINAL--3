@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cake Shop Hero</title>
+  <title>Cake Shop </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
@@ -17,12 +17,91 @@
     }
 
     /* Navbar */
+      .testimonial-section {
+  background: #fff6f1;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.testimonial-header h5 {
+  color: #e6734f;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.testimonial-header h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.client-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.client-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.client-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.rating {
+  font-size: 16px;
+  color: #f6b300;
+  font-weight: bold;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 15px 20px;
-      background-color: #f97316; /* Orange */
+      background-color: #f97316; 
       flex-wrap: wrap;
     }
 
@@ -52,7 +131,7 @@
       color: #000;
     }
 
-    /* Hero Section */
+   
     .hero {
       background-image: url('https://preview.colorlib.com/theme/cake/img/hero/hero-1.jpg.webp');
       background-size: cover;
@@ -856,6 +935,44 @@ form button:hover {
         </div>
       </div>
     </div>
+  </div>
+</section>
+  <section class="testimonial-section">
+  <div class="testimonial-header">
+    <h5>TESTIMONIAL</h5>
+    <h2>Our client say</h2>
+  </div>
+
+  <div class="testimonial-cards">
+
+    <div class="testimonial-card">
+      <div class="client-info">
+        <img src="https://preview.colorlib.com/theme/cake/img/testimonial/ta-1.jpg" alt="Ophelia Nunez">
+        <div>
+          <h3>OPHELIA NUNEZ</h3>
+          <p>London</p>
+        </div>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <p class="testimonial-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua viverra lacus vel facilisis.
+      </p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="client-info">
+        <img src="https://preview.colorlib.com/theme/cake/img/testimonial/ta-2.jpg" alt="Kerry D. Silva">
+        <div>
+          <h3>KERRY D. SILVA</h3>
+          <p>New York</p>
+        </div>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <p class="testimonial-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua viverra lacus vel facilisis.
+      </p>
+    </div>
+
   </div>
 </section>
 <section class="instagram-section">
